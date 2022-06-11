@@ -1,0 +1,23 @@
+.grid{
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: ;
+}
+.flex{
+  display: flexbox;}
+
+ul {
+    list-style: none;
+    padding-left: 0; 
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+ .content{
+   background-color: blue;
+grid-column-start: 2;
+grid-column-end: 8;
+ }
+
+ 
