@@ -3,8 +3,11 @@
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: ;
 }
-.flex{
-  display: flexbox;}
+.content{
+  background-color: blue;
+grid-column-start: 2;
+grid-column-end: 8;
+}
 
 ul {
     list-style: none;
@@ -13,11 +16,11 @@ ul {
     justify-content: space-around;
   }
 
+  .contakt{
+    justify-items:end
+  }
 
- .content{
-   background-color: blue;
-grid-column-start: 2;
-grid-column-end: 8;
+h1,h2{
+  display: flex;
+  justify-content: center;
  }
-
- 
