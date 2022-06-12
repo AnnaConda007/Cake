@@ -1,14 +1,53 @@
 .grid{
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: ;
+  grid-template-columns:repeat(8, 1fr) ;
+  grid-auto-rows: minmax(2em,auto);
+  grid-auto-flow: column;
 }
 
-ul {
-    list-style: none;
-    padding-left: 0; 
-    display: flex;
-    justify-content: space-around;
-  }
+ul{
+  list-style: none;
+  padding-left: 0;
+  display:flex;
+  justify-content: space-around;
+}
+
+.logo{
+ background-color: aqua;
+  grid-column-start: 2;
+}
+
+.contakt{
+grid-area: 1/6/1/8
+}
+
+.menu{
+ grid-area: 2/2/2/8;
+  justify-content: space-around;
+  background-color: rgba(161, 0, 168, 0.8);
+  z-index: 1;
+}
+
+figure>img{
+  width: 15em;
+  border-radius: 20px;
+}
+figcaption{
+  text-align: center;
+ background-color: rgba(161, 0, 168, 0.8);
+}
+
+
+
+
+
+.baner{
+  display: grid;
+  grid-area: 2/2/14/8 ;
+  background-color: rgb(68, 68, 15);
+  background-image: url(picture/background.jpg);
+  grid-auto-flow: column;
+
+}
 
 
